@@ -10,7 +10,7 @@ In this repository is the sql file needed to have the start up of the database.
 
 Additional items in the repository are the images files and css needed for the system.
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 
 This system was created by me and my partner jacob-cruz.
@@ -27,4 +27,10 @@ To run the System Download the Final Project Folder.
 5) Finally, search and run the localhost:xxxx/Final-Project/index.html
 
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+To add in more Account Members Just Insert it using the localhost/myphpadmin
+
+Test Account
+Enter Employee ID: test
+Enter Password: test
