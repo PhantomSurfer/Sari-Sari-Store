@@ -59,7 +59,7 @@ date_default_timezone_set("Asia/Manila");
 				<form method="get">
 					<div id="POSSearchBoxWrapper">
 						<img src="asset/img/search icon.png">
-						<input type="text" name="searchPOS" id="searchPOS" placeholder="Search..." value="<?php if (isset($_GET["searchPOS"])) echo $_GET["searchPOS"]; ?>">
+						<input type="text" name="searchPOS" id="searchPOS" placeholder="Search Product Name" value="<?php if (isset($_GET["searchPOS"])) echo $_GET["searchPOS"]; ?>">
 					</div>
 				</form>
 			</div>
