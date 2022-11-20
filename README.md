@@ -15,4 +15,16 @@ Additional items in the repository are the images files and css needed for the s
 
 This system was created by me and my partner jacob-cruz.
 
-This is our Final Project for our subject System Integration, where we individually created the main sub-system and integrate the systems to one main system.
+This is our Final Project for our subject System Integration, where we individually created the main sub-system 
+and integrate the systems to one main system.
+
+To run the System Download the Final Project Folder.
+
+1) Run XAMPP Control Panel
+2) Run Apache and MySQL
+3) Make the "file_upload = On" in 'php.ini' of 'Apache' by clicking config
+4) Import the included testdb.sql in the MySQL
+5) Finally, search and run the localhost:xxxx/Final-Project/index.html
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
