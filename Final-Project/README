@@ -1,0 +1,15 @@
+Things To DO:
+
+To Run the System:
+Start XAMPP
+Run Apache
+Run MySQL
+
+Go To Localhost/myphpadmin
+IMPORT testdb.sql
+
+To See the System:
+Go to Localhost/Final-Project/index.html
+
+Enter Employee ID: test
+Enter Password: test

@@ -1,0 +1,510 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	outline: 0;
+    box-sizing: border-box;
+    font-family: 'Kadwa';
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+/*  */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ 	-webkit-appearance: none;
+ 	margin: 0;
+}
+
+#navbar{
+	background-color: #293241;
+	width: 99vw;
+	height: 10vh;
+}
+
+#navbar img{
+	height: 5vh;
+	margin-top: 2vh;
+}
+
+.navigation{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5vw;
+	width: 3vw;
+	float: left;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+#homeIcon{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5vw;
+	width: 5vw;
+	float: left;
+	text-align: center;
+}
+
+#navbar p{
+	color: white;
+	margin: 0px;
+	font-size: 1.5vw;
+	width: 1vw;
+	float: left;
+	margin-top: 2vh;
+	text-align: center;	
+}
+
+#navbar-logout{
+	text-align: right;
+	padding-top: 2.5vh;
+	margin-right: 3vw;
+} 
+
+#navbar button{
+    background-color: #EE6C4D;
+    color: #fff;
+    border-radius: 15px;
+    border: 3px solid #fff;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+               1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    padding: 0px 60px;
+}
+
+#navbar button:hover{
+    background-color: #293241;
+    color: #000;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+    1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.manage-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.add-stock-button {
+    background-color: #E0FBFC;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 3px rgba(0,0,0,0.45);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #EE6C4D;
+    text-shadow: 2px 0 #3D5A80, -2px 0 #3D5A80, 0 2px #3D5A80, 0 -2px #3D5A80,
+    1px 1px #3D5A80, -1px -1px #3D5A80, 1px -1px #3D5A80, -1px 1px #3D5A80;
+    padding: 0px 40px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.add-stock-button:hover {
+    transform: scale(1.1);
+}
+
+.manage-option h2{
+    color: #EE6C4D;
+}
+
+.setting-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #98C1D9;
+}
+
+.sort-inv label {
+    font-style: normal;
+    font-size: 20px;
+    margin-left: 1vw;
+}
+
+.sort-inv select{
+	font-size: 1vw;
+	height: 5vh;
+	width: 10vw;
+}
+
+.sort-inv input{
+	font-size: 1vw;
+	height: 4vh;
+	width: 15vw;
+}
+
+#setting-overlay{
+    background-color: #EE6C4D;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 10px 5px 5px rgba(0,0,0,0.5);
+    padding: 0 30px;
+}
+
+/*  */
+.Inventory-Table{
+    border-collapse: collapse;
+    min-width: none;
+    max-height: 30px;
+    font-size: 20px;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+.Inventory-Table thead tr {
+    background-color: #3D5A80;
+    color: #fff;
+    font-weight: 700;
+}
+
+.Inventory-Table thead tr th {
+    background-color: #3D5A80;
+    position: sticky;
+    top: 0;
+    padding: 12px 15px;
+    border-bottom: 2px solid #000;
+}
+
+.Inventory-Table thead tr th::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+}
+
+.Inventory-Table td:nth-child(2) {
+    text-align: left;
+}
+
+.Inventory-Table td {
+    padding: 12px 15px;
+    text-align: center;
+    max-height: 30px;
+}
+
+.Inventory-Table tbody tr {
+    background-color: #98C1D9;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.Inventory-Table tbody tr:nth-of-type(even) {
+    background-color: #3D5A80;
+    color: #fff;
+}
+
+.Inventory-Table tbody tr:last-of-type {
+    border-bottom: 5px solid #3D5A80;
+}
+/*  */
+#itemsINV{
+	width: 99vw;
+	height: 72.5vh;
+	overflow: auto;
+	display: flex;
+} 
+
+#search-box{
+    margin-right: 1vw;
+	width: 100%;
+    height: 5vh;
+	text-align: right;
+	border: 0.15vw solid black;
+    background-color: #fff;
+}
+#search-box input{
+	border: 0;
+	vertical-align: middle;
+	margin-left: 0.5vw;
+    height: 4.5vh;
+}
+
+#search-box img{
+	height: 2.5vh;
+	vertical-align: middle;
+	pointer-events: none;
+}
+/* LOG  */
+#POSLogsWrapper{
+	overflow: auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+#POSLogsTable{
+	width: 100vw;
+	font-size: 1vw;
+	border-collapse: collapse;
+}
+
+#POSLogsTable th{
+	height: 10vh;
+	background-color: #EE6C4D;
+}
+
+#POSLogsTable td{
+	border-bottom: 1px solid black;
+}
+
+.POSLogLeft{
+	border-right: 1px solid black;
+	text-align: center;
+}
+
+.POSLogRight{
+	border-left: 1px solid black;
+	text-align: center;
+}
+
+#POSDateTimeHeader{
+	width: 20vw;
+}
+
+#POSItemsHeader{
+	width: 60vw;
+}
+
+#POSTotalHeader{
+	width: 20vw;
+}
+
+.altColor{
+	background-color: lightgrey;
+}
+
+/* */
+
+.productactionbutton {
+    background-color: #EE6C4D;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    transition: transform 0.2s;    
+}
+
+.productactionbutton:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    left: 35%;
+    height: 500px;
+    width: 600px;
+    background-color: #EE6C4D;
+    border-radius: 75px;
+}
+
+.addItemForm label {
+    margin-top: 250px;
+}
+
+.closebutton {
+    top: 5vh;
+    right: 5vh;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+}
+
+.addPopupBtn {
+    margin-left: 50px;
+    margin-top: 150px;
+    cursor: pointer;
+    width: 500px;
+    height: 75px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #3D5A80;
+    border-radius: 60px;
+    text-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+    transition: transform 0.5;
+}
+
+.addPopupBtn:last-child {
+    margin-top: 70px;
+}
+
+.addPopupBtn:hover {
+    transform: scale(1.1);
+}
+
+.deleteParagraph{
+    padding-top:120px;
+    color:#fff;
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+    text-align: center;
+}
+
+#deleteWrapper{
+    padding-top: 50px;
+    text-align: center;
+}
+
+#deleteWrapper input{
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
+  height: 5vh;
+  width: 10vw;
+  border: 3px solid #000;
+  border-radius: 15px;
+  color: red;
+  cursor: pointer;
+  background-color: #E0FBFC;
+}
+
+#deleteWrapper button{
+    margin-left: 0.5vw;
+    font-size: 1.5vw;
+    height: 5vh;
+    width: 10vw;
+    border: 3px solid #000;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #E0FBFC;
+}
+
+#addItemsName{
+  padding-top: 120px;
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#addItemsLabel{
+  font-size: 24px;
+  color: #fff;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+  1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+#addItemsAmount{
+  font-size: 24px;
+  text-align: center;
+  height: 4.5vh;
+  width: 3.5vw;
+  border: 1px solid #000;
+}
+
+#addItemsButton{
+  margin-left: 0.5vw;
+  font-size: 1.5vw;
+  height: 5vh;
+  width: 10vw;
+  border: 3px solid #000;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #E0FBFC;
+}
+
+#addItemsAmountWrapper{
+  padding-top: 50px;
+  text-align: center;
+}
+
+.editMenu {
+    width: 100%;
+    margin-left: 60px;
+}
+
+.editMenu tr th{
+    padding-top: 65px;
+}
+
+.editMenu tr{
+    padding-bottom: 10px;
+}
+
+.editMenu input {
+    text-align: center;
+}
+
+.editMenu label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+}
+
+.maxTD {
+    width: 80%;
+}
+
+.minTD {
+    width: 175px;
+}
+
+.editSubmitBtn{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 25px;
+    width: 120px;
+    background: #E0FBFC;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+#insertNewProduct{
+    margin-left: 175px;
+}
+
+
+#updateProductSetting{
+    margin-left: 55px;
+}
+
+.deleteItemStock{
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 25px;
+    width: 120px;
+    background: #E0FBFC;
+    color: red;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
