@@ -14,6 +14,6 @@ Additional items in the repository are the images files and css needed for the s
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
 
 
-This system was created by me and my partner ().
+This system was created by me and my partner jacob-cruz.
 
 This is our Final Project for our subject System Integration, where we individually created the main sub-system and integrate the systems to one main system.
