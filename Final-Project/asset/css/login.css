@@ -1,0 +1,64 @@
+*{
+    font-family: 'Kadwa';
+}
+
+body{
+    background-color: #3D5A80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-body {
+    margin: 10% 0;
+    padding: 10px;
+    width: 500px;
+    height: 400px;
+    background-color: #e0fbfc;
+    border: 4px solid #000;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px 20px 75px 75px;
+}
+
+.login-body h1 {
+    text-align: center;
+}
+
+.login-body form label {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.login-body form input[type=text], .login-body form input[type=password] {
+    text-align: center;
+    margin: 3% 10% 3%;
+    background-color: #3D5A80;
+    border: 2px solid #000;
+    border-radius: 15px;;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 390px;
+}
+
+.login-body form input[type=submit] {
+    margin: 5% 35%;
+    background-color: #EE6C4D;
+    border: 3px solid #000;
+    border-radius: 15px;;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000,
+    1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
+
+.login-body form input[type=submit]:hover {
+    background-color: #e0fbfc;
+    box-shadow: 4px 10px 10px rgba(0, 0, 0, 0.5);
+    color: #000;
+    text-shadow: 2px 0 #EE6C4D, -2px 0 #EE6C4D, 0 2px #EE6C4D, 0 -2px #EE6C4D,
+    1px 1px #EE6C4D, -1px -1px #EE6C4D, 1px -1px #EE6C4D, -1px 1px #EE6C4D;
+}

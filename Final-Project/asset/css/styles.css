@@ -1,0 +1,394 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-family: Kadwa;
+	overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+ 	-webkit-appearance: none;
+ 	margin: 0;
+}
+
+input[type=number] {
+ 	-moz-appearance: textfield;
+}
+
+#navbar{
+	background-color: #293241;
+	width: 100vw;
+	height: 10vh;
+}
+
+#navbar img{
+	height: 5vh;
+	margin-top: 2vh;
+}
+
+.navigation{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5vw;
+	width: 3vw;
+	float: left;
+	text-align: center;
+	margin-top: 2vh;
+}
+
+#homeIcon{
+	color: white;
+	text-decoration: none;
+	font-size: 1.5vw;
+	width: 5vw;
+	float: left;
+	text-align: center;
+}
+
+#navbar p{
+	color: white;
+	margin: 0px;
+	font-size: 1.5vw;
+	width: 1vw;
+	float: left;
+	margin-top: 2vh;
+	text-align: center;	
+}
+
+#navbar button{
+	color: white;
+	background-color: #EE6C4D;
+	width: 12.5vw;
+	height: 5vh;
+	font-size: 1.5vw;
+	border: 0.15vw solid white;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+#Logout{
+	text-align: right;
+	padding-top: 2.5vh;
+	margin-right: 3vw;
+}
+
+
+#POScontentWrapper{
+	display: flex;
+}
+
+#sortPOS{
+	border: 0.15vw solid black;
+	width: 70vw;
+	height: 8vh;
+}
+
+#sortPOS label{
+	font-size: 1vw;
+	margin-left: 1vw;
+
+}
+
+#sortPOS select{
+	font-size: 1vw;
+	height: 5vh;
+	width: 10vw;
+}
+
+#sortPOS input{
+	font-size: 1vw;
+	height: 4vh;
+	width: 15vw;
+}
+
+#POSSortWrapper{
+	margin-right: 1vw;
+	margin-top: 1.2vh;
+	width: 40%;
+	float: left;
+}
+
+#POSSearchBoxWrapper{
+	float: right;
+	margin-right: 1vw;
+	margin-top: 1.5vh;
+	width: 25%;
+	text-align: right;
+	border: 0.15vw solid black;
+}
+
+#POSSearchBoxWrapper input{
+	border: 0;
+	vertical-align: middle;
+	margin-left: 0.5vw;
+}
+
+#POSSearchBoxWrapper img{
+	height: 2.5vh;
+	vertical-align: middle;
+	pointer-events: none;
+}
+
+#itemsPOS{
+	border: 0.15vw solid black;
+	width: 70vw;
+	height: 81.1vh;
+	overflow: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 32vh;
+}
+
+#cartPOS{
+	background-color: #E0FBFC;
+	border: 0.15vw solid black;
+	width: 29.58vw;
+	height: 68vh;
+	overflow: auto;
+	display: flex;
+	justify-content: center;
+}
+
+#summaryPOS{
+	background-color: white;
+	border: 0.15vw solid black;
+	height: 24.3%;
+	font-size: 1.5vw;
+}
+
+#summaryPOS p{
+	text-align: center;
+}
+
+#completeOrder{
+	text-align: center;
+}
+
+#completeOrder button{
+	background-color: #E0FBFC;
+	width: 12.5vw;
+	height: 5vh;
+	font-size: 1.5vw;
+	border: 0.15vw solid black;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.productContainer{
+	font-size: 0.8vw;
+	text-align: center;
+	background-color: #98C1D9;
+	display: flex;
+	flex-direction: column;
+	margin: 0.75vw;
+	height: 30vh;
+	width: 15.70vw;
+	cursor: pointer;
+}
+
+.productContainerQty{
+	text-align: center;
+	height: 12.5%;
+	width: 12.5%;
+	margin-left: auto;
+}
+
+.productContainerName{
+	margin-top: 10%;
+}
+
+.productContainerImage img{
+	width: 6vw;
+}
+
+.productContainerPrice{
+	height: 12.5%;
+}
+
+.overlay {
+  	height: 100%;
+  	width: 100%;
+  	display: none;
+  	position: fixed;
+  	z-index: 1;
+  	top: 0;
+  	left: 0;
+  	background-color: rgb(0,0,0);
+  	background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+ 	position: relative;
+  	top: 25%;
+  	left: 25%;
+  	height: 30vh;
+  	width: 50vw;
+  	background-color: white;
+}
+
+.overlay-content p{
+	font-size: 32px;
+}
+
+.overlay a {
+  	text-decoration: none;
+  	font-size: 3vw;
+  	color: red;
+}
+
+.overlay .closebtn {
+ 	height: 6vh;
+	width: 3vw;
+	background-color: red;
+	border-radius: 50%;
+	cursor: pointer;
+	position: absolute;
+	top: 25vh;
+	right: 23.5vw;
+	z-index: 2;
+}
+
+.overlay .closebtnX{
+	position: absolute;
+	color: white;
+	font-size: 1.6vw;
+	top: -3vh;
+	left: 0.9vw;
+}
+
+@media screen and (max-height: 450px) {
+  	.overlay a {font-size: 3vw}
+	.overlay .closebtn {
+	font-size: 3vw;
+  	}
+  	.overlay .closebtnbg {
+  		height: 6vh;
+  		width: 3vw;
+  	}
+}
+
+#addItemsName{
+	padding-top: 2.5vh;
+	text-align: center;
+	font-size: 2vw;
+}
+
+#addItemsLabel{
+	font-size: 1.5vw;
+}
+
+#addItemsAmount{
+	font-size: 1.5vw;
+	text-align: center;
+	height: 4.5vh;
+	width: 3.5vw;
+	border: 1px solid black;
+}
+
+#addItemsButton{
+	margin-left: 0.5vw;
+	font-size: 1.5vw;
+	height: 5vh;
+	width: 10vw;
+	border: 1px solid black;
+	border-radius: 10%;
+	cursor: pointer;
+	background-color: #E0FBFC;
+}
+
+#addItemsAmountWrapper{
+	text-align: center;
+}
+
+.cartTable{
+	font-size: 1vw;
+	height: 0vh;
+	width: 25vw;
+	border-collapse: collapse;
+	border-spacing: 10px;
+}
+
+.priceItem{
+	padding-bottom: 3vh;
+}
+
+.deleteItem{
+	padding-bottom: 3vh;
+}
+
+.deleteItem button{
+	color: red;
+	cursor: pointer;
+	background: none;
+	border: none;
+	font-size: 1vw;
+}
+
+.imageItem img{
+	width: 4vw;
+}
+
+.qtyItem{
+	padding-bottom: 3vh;
+}
+
+#POSLogsWrapper{
+	overflow: auto;
+	width: 100vw;
+	height: 100vh;
+}
+
+#POSLogsTable{
+	width: 100vw;
+	font-size: 1vw;
+	border-collapse: collapse;
+}
+
+#POSLogsTable th{
+	height: 10vh;
+	background-color: #EE6C4D;
+}
+
+#POSLogsTable td{
+	border-bottom: 1px solid black;
+}
+
+.POSLogLeft{
+	border-right: 1px solid black;
+	text-align: center;
+}
+
+.POSLogRight{
+	border-left: 1px solid black;
+	text-align: center;
+}
+
+#POSDateTimeHeader{
+	width: 20vw;
+}
+
+#POSItemsHeader{
+	width: 60vw;
+}
+
+#POSTotalHeader{
+	width: 20vw;
+}
+
+.altColor{
+	background-color: lightgrey;
+}
+
+.disabled{
+	font-size: 0.8vw;
+	text-align: center;
+	background-color: lightgrey;
+	display: flex;
+	flex-direction: column;
+	margin: 0.75vw;
+	height: 30vh;
+	width: 15.70vw;
+	opacity: 80%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="asset/css/login.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kadwa&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/png" href="asset/img/icons8-login-rounded-32.png">
+    </head>
+    <style>
+        .AlertAdmin{
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            transition: transform 0.2s;
+        }
+
+        .AlertAdmin:hover{
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        function AlertAdmin(){
+            alert("Admin is alerted and is on the way!...");
+        }
+    </script>
+    <body>
+        <div class="login-body">
+            <h1>LOG-IN</h1>
+            <form action="authenticate.php" method="post">
+                <label id="employeeID">EMPLOYEE ID: </label> <br>
+                <input type="text" id="employeeID-input" name="employeeID" required> <br>
+                <label id="password">PASSWORD: </label> <br>
+                <input type="password" id="password-input" name="password" required> <br>
+                <input type="submit" value="Log-in">
+            </form>
+            <img src="asset/img/AlertAdmin.png" alt="AlertAdmin" class="AlertAdmin" onclick="AlertAdmin();"/>
+        </div>
+    </body>
+</html>
