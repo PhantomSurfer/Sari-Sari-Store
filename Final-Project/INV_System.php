@@ -67,7 +67,7 @@ ADD LAST STOCK-->
             <form method="get">
                 <div id="search-box">
                     <img src="asset/img/search icon.png">
-                    <input type="text" name="search-bar" id="search-bar" placeholder="Search..." value="<?php if (isset($_GET["search-bar"])) echo $_GET["search-bar"]; ?>">
+                    <input type="text" name="search-bar" id="search-bar" placeholder="Search Product Name" value="<?php if (isset($_GET["search-bar"])) echo $_GET["search-bar"]; ?>">
                 </div>
             </form>
         </div>
@@ -189,7 +189,7 @@ ADD LAST STOCK-->
                             <td><input type="number" id="newProductPrice" name="newProductPrice" class="minTD"></input></td>
                         </tr>
                         <tr>
-                            <td colspan="3"><label>Item Image:</label></td>
+                            <td colspan="3"><label>Item Image (Only PNG File):</label></td>
                         </tr>
                         <tr>
                             <td colspan="3"><input type="file" name="UploadImage" id="UploadImage"></input></td> <!--This needs to be edited-->
@@ -271,7 +271,7 @@ ADD LAST STOCK-->
                             <td><input type="number" id="editProductPrice" name="editProductPrice" class="minTD" placeholder="000"></input></td>
                         </tr>
                         <tr>
-                            <td colspan="3"><label>Item Image:</label></td>
+                            <td colspan="3"><label>Item Image (Only PNG File):</label></td>
                         </tr>
                         <tr>
                             <td colspan="3"><input type="file" name="fileToUpload" id="fileToUpload"></input></td> <!--This needs to be edited-->
