@@ -53,6 +53,7 @@ if (!empty($_POST["editProductName"])) {
             header('Location: INV_System.php');
 
         } else {
+	    echo '<script>alert("An Error has Occurred!")</script>';
             echo "Error updating record: " . mysqli_error($con);
             $change = false;
             header('Location: INV_System.php');
@@ -76,25 +77,25 @@ if (!empty($_POST["editProductName"])) {
 
     // Check file size
     if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo "Sorry, your file is too large.";
+    echo '<script>alert("Error! Sorry, File is to large.")</script>';
     $uploadOk = 0;
     }
 
     // Allow certain file formats
     if($imageFileType != "png") {
-    echo "Sorry, only PNG files are allowed.";
+    echo '<script>alert("Error! Sorry, only PNG files are allowed.")</script>';
     $uploadOk = 0;
     }
 
     // Check if $uploadOk is set to 0 by an error
     if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
+    echo '<script>alert("An Error has Occurred! Updload Image File Failed")</script>';
     // if everything is ok, try to upload file
     } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_dir . $New_Product_Name . "." . $imageFileType)) {
         echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
     } else {
-        echo "Sorry, there was an error uploading your file.";
+        echo '<script>alert("An Error has Occurred! Updload Image File Failed")</script>';
     }
     }
 
@@ -125,6 +126,7 @@ if (!empty($_POST["editProductName"])) {
         header('Location: INV_System.php');
 
     } else {
+	echo '<script>alert("An Error has Occurred!")</script>';
         echo "Error updating record: " . mysqli_error($con);
         $change = false;
         header('Location: INV_System.php');
