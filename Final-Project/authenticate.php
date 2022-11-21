@@ -34,10 +34,12 @@ if ($stmt = $con->prepare('SELECT id, password FROM account WHERE employee_id = 
         } else {
             // Incorrect password
 	    echo '<script>alert("Incorrect username and/or password!")</script>';
+	    header('Location: index.html');
         }
     } else {
         // Incorrect username
         echo '<script>alert("Incorrect username and/or password!")</script>';
+	header('Location: index.html');
     }
 
 	$stmt->close();
