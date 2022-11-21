@@ -77,13 +77,13 @@ if (!empty($_POST["editProductName"])) {
 
     // Check file size
     if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo '<script>alert("Error! Sorry, File is to large.")</script>';
+    echo '<script>alert("Sorry, Iamge file is too large.")</script>';
     $uploadOk = 0;
     }
 
     // Allow certain file formats
     if($imageFileType != "png") {
-    echo '<script>alert("Error! Sorry, only PNG files are allowed.")</script>';
+    echo '<script>alert("Sorry, only PNG files are allowed.")</script>';
     $uploadOk = 0;
     }
 
