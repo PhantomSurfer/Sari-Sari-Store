@@ -23,7 +23,7 @@ if (!empty($_POST["addItemsAmount"])) {
         header('Location: INV_System.php');
 
     } else {
-	echo '<script>alert("An Error Has Occurred when updating!")</script>';
+	echo '<script>alert("An Error Has Occurred!")</script>';
         echo 'Error updating record: ' . mysqli_error($con);
         header('Location: INV_System.php');
     }
