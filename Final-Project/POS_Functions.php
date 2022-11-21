@@ -190,7 +190,7 @@
 			}
 		}
 		else{
-			echo "No results found, please try again.";
+			echo '<script>alert(No results found, please try again.)</script>';
 		}
 	}
 
