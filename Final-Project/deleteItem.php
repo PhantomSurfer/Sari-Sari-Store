@@ -18,6 +18,7 @@ if (!empty($_POST["deleteProductName"])) {
         header('Location: INV_System.php');
     }
     else {
+	echo '<script>alert("An Error Occurred when Item is Deleting")</script>';
         echo "Error updating record: " . mysqli_error($con);
         header('Location: INV_System.php');
     }
