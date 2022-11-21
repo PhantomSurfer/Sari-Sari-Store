@@ -27,26 +27,6 @@
                         <td>₱'.$row["Product_Price"].'</td>
                     </tr>
                 ';
-				//echo '<div class="productContainer" id="'.$row['Product_Name'].'" onclick="openItemsOverlay(); setProductName(this.id);">';
-				// 	echo '<div class="productContainerQty">';
-				// 		$temp = $row['Product_Qty'];
-				// 		if ($temp > 0) {
-				// 		echo $row['Product_Qty'];
-				// 		}
-				// 		else{
-				// 			echo '<span style="color:red">' . "0" . '</span>';
-				// 		}
-				// 	echo '</div>';
-
-				// 	echo '<div class="productContainerName">';
-				// 		$product_Name = $row['Product_Name'];
-				// 		echo $product_Name;
-				// 	echo '</div>';
-
-				// 	echo '<div class="productContainerPrice">';
-				// 			echo "₱" . $row['Product_Price'];
-				// 	echo '</div>';
-				// echo '</div>';
 			}
             $table .= '</tbody></table>';
             echo $table;
@@ -200,7 +180,7 @@
             echo $table;
 			}
 		else{
-			echo "No results found, please try again.";
+			echo '<script>alert(No results found, please try again.)</script>';
 		}
 	}
 
