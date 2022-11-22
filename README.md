@@ -34,3 +34,5 @@ To add in more Account Members Just Insert it using the localhost/myphpadmin
 Test Account
 Enter Employee ID: test
 Enter Password: test
+
+To add more categories in the inventory you must add more options in the select input at the new_item and edit_save PHP
