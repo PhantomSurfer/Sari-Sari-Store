@@ -132,5 +132,4 @@ if (!empty($_POST["editProductName"])) {
         header('Location: INV_System.php');
     }
     }
-}
 ?>
